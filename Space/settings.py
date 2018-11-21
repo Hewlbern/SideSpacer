@@ -87,7 +87,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = MEDIA_DIR #where to look for files
 MEDIA_URL = '/media/' #where to serve files from on url
 WSGI_APPLICATION = 'Space.wsgi.application'
-
+STATIC_ROOT = STATIC_DIR
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
