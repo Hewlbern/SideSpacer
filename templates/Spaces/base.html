@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Side Spacer</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- One Page Module Specific Stylesheet -->
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<!-- / -->
+	<link rel="stylesheet" href="dark.css" type="text/css" />
+		<link rel="stylesheet" href="font-icons.css" type="text/css" />
+		<link rel="stylesheet" href="animate.css" type="text/css" />
+		<link rel="stylesheet" href="magnific-popup.css" type="text/css" />
+
+		<link rel="stylesheet" href="responsive.css" type="text/css" />
+
+
+	<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<section id="slider" class="slider-parallax full-screen with-header force-full-screen clearfix">
+
+			<div class="slider-parallax-inner">
+
+				<div class="full-screen force-full-screen" style="background: url('{% static 'images/parallax/home/9.jpg' %}') center center no-repeat; background-size: cover;">
+
+					<div class="container clearfix">
+						<div class="emphasis-title vertical-middle center">
+							<h1 data-animate="fadeInUp">Welcome to <strong>Canvas</strong></h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+					<!-- Header
+					============================================= -->
+					<header id="header" class="transparent-header">
+
+						<div id="header-wrap">
+
+							<div class="container clearfix">
+
+								<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+								<!-- Logo
+								============================================= -->
+								<div id="logo">
+									<a  class="standard-logo" data-dark-logo={% static "images/logo-dark.png" %}></a>
+								</div><!-- #logo end -->
+
+  <!-- Navigation -->
+
+<nav id="primary-menu" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active"><a class="nav-link" href="/Spaces">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="/Spaces/space">Spaces</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        {% if user.is_authenticated %}
+        <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Log out {{user.username}}</a></li>
+        {% else %}
+        <li class="nav-item"><a class="nav-link" href="{% url 'signup' %}">Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+        {% endif %}
+			</ul>
+
+		</div>
+	</div>
+
+</nav>
+{% block content %}
+								{% endblock %}
+
+
+
+
+              <hr>
+
+
+              <div class="container-fluid padding">
+              	<div class="row text-center">
+
+              		<div class="col-md-4">
+
+              			<hr class="light">
+              			<img src="#">
+              			<hr class="light">
+              			<p>555-555-55555</p>
+              			<p>email@someonesmail.com</p>
+              			<p>100 Street name</p>
+              			<p>City, State, 0000</p>
+
+              		</div>
+
+              		<div class="col-md-4">
+
+              			<hr class="light">
+              			<h5>Our hours</h5>
+              			<hr class="light">
+              			<p>Monday: 9AM - 5PM</p>
+              			<p>Saturday: 10AM - 4PM</p>
+              			<p>Sunday: Closed</p>
+
+              		</div>
+
+              		<div class="col-md-4">
+
+              				<hr class="light">
+              				<h5>Service Area</h5>
+              				<hr class="light">
+              				<p>City, State, 0000</p>
+              				<p>City, State, 0000</p>
+              				<p>City, State, 0000</p>
+
+              		</div>
+
+              		<div class="col-12">
+
+              			<hr class="light">
+              			<h5>&copy; nameofthebusiness </h5>
+
+              		</div>
+
+              	</div>
+              </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

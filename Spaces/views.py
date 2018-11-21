@@ -18,12 +18,12 @@ def index(request):
 
     # Render the response and send it back!
 
-    return render(request, 'Spaces/index.html', context_dict)
+    return render(request, 'Spaces/space.html', context_dict)
 
 
-def about(request):
+def space(request):
     context_dict = {'boldmessage':"Crunchy, creamy, cookie, candy, cupcake!"}
-    return render(request, 'Spaces/about.html', context=context_dict)
+    return render(request, 'Spaces/space.html', context=context_dict)
 
 def show_category(request, category_name_slug):
     # Create a context dictionary which we can pass

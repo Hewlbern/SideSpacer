@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+{% extends "Spaces/base.html" %}
+{% block content %}
 {% load socialaccount %}
 
-<html>
+
 <h2>Login</h2>
 <form method="post">
   {% csrf_token %}
@@ -10,4 +11,5 @@
 </form>
 
 <a class="nav-link"  href="{% provider_login_url 'google' %}">Log In with Gmail<span class="sr-only">(current)</span></a>
-</html>
+
+{% endblock %}
