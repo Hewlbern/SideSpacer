@@ -1,46 +1,55 @@
 {% extends "Spaces/base.html" %}
 {% load staticfiles %}
-  {% block content %}
-    <div class="container">
-              <!-- Example row of columns -->
-              <div class ="row">
-                <div class ="col">
-                  <h2>Most Viewed Spaces</h2>
-              {% if categories %}
-              <ul>
-                {% for category in categories %}
-                  <li>
-										{% if category.image %}
-										<img src="{{ category.image.url }}"  width = 250px  />
-										{% endif %}
-                    <a href="/Spaces/category/{{ category.slug }}">{{ category.name }}</a>
-                  </li>
-                  {% endfor %}
-              </ul>
-              {% else %}
-                <strong>There are no Spaces present.</strong>
-              {% endif %}
+{% block content %}
 
+<div class="container clearfix">
+
+    <div class="col_three_fifth bothsidebar nobottommargin">
+
+        <div class="fancy-title title-border">
+            <h3>Popular Spaces</h3>
+            {% if categories %}
+        </div>
+        {% for category in categories %}
+        <div id="posts" class="events small-thumbs">
+
+            <div class="entry clearfix">
+                <div class="entry-image d-md-none d-lg-block">
+                    <a href="#">
+                        {% if category.image %}
+                        <img src="{{ category.image.url }}" alt="{{ category.name }}">
+                        {% endif %}
+                    </a>
                 </div>
-                  <div class ="col">
-                    <h2>Most Viewed Events</h2>
-              		  <p>
-              				{% if pages %}
-              				    <ul>
-              				{% for page in pages %}
-              				    <li><a href="{{ page.url }}">{{ page.title }}</a></span></li>
-              				 {% endfor %}
-              				   </ul>
-              				{% else %}
-              				    <strong>There are no Events present.</strong>
-              			 {% endif %}
-              			</p>
-                  </div>
-                <div>
-              <div>
-                <p><a class="btn btn-success" href="/Spaces/add_category/" role="button">Add New Space »</a></p>
-                <p><a class="btn btn-success" href="/Spaces/add_page/" role="button">Create New Event »</a></p>
-              </div>
+                <div class="entry-c">
+                    <div class="entry-title">
+                        <h2><a href="{{ page.url }}">{{ category.name }}</a></h2>
+                    </div>
+                    <ul class="entry-meta clearfix">
+                        <li><span class="badge badge-warning">Private</span></li>
+                        <li><a href="#"><i class="icon-time"></i> 11:00 - 19:00</a></li>
+                        <li><a href="#"><i class="icon-map-marker2"></i> Melbourne</a></li>
+                    </ul>
+                    <div class="entry-content">
+                        <a href="{% url 'signup' %}" class="btn btn-secondary" disabled="disabled">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
 
-            </div> <!-- /container -->
- {% endblock %}
+        </div>
+        {% endfor %}
+        {% else %}
+        <strong>There are no Spaces present.</strong>
+        {% endif %}
+    </div>
+
+    <div class="col_two_fifth nobottommargin col_last">
+
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}
