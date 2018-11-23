@@ -15,11 +15,9 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
-STATIC_DIR = os.path.join(BASE_DIR, 'static')
-MEDIA_DIR = os.path.join(BASE_DIR,'media')
+
+
 
 
 
@@ -65,6 +63,16 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Space.urls'
 
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
+STATIC_ROOT = os.path.join(BASE_DIR,'static_root')
+STATICFILES_DIRS = [STATIC_DIR, ]
+
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -82,12 +90,12 @@ TEMPLATES = [
     },
 ]
 
-STATICFILES_DIRS = [STATIC_DIR,  ]
 STATIC_URL = '/static/'
 MEDIA_ROOT = MEDIA_DIR #where to look for files
 MEDIA_URL = '/media/' #where to serve files from on url
+
 WSGI_APPLICATION = 'Space.wsgi.application'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases

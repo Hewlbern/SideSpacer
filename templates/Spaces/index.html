@@ -1,42 +1,124 @@
 {% extends "Spaces/base.html" %}
-
+{% load staticfiles %}
 {% block content %}
 
 <!--- Image Slider -->
 
-<div id="slides" class="carousel slide" data-ride="carousel">
+<section id="content">
 
-	<ul class="carousel-indicators">
-		<li data-target="#slides" data-slide-to="0"class="active"></li>
-	</ul>
+    <div class="content-wrap">
 
-	<div class="carousel-inner">
-		<div class="carousel-item active">
+        <div class="container clearfix">
 
-			<div class="carousel-caption">
-				<h3 class="display-2">Need a workspace on the go?</h3>
-				<h3>Great locations and flexible pricing!</h3>
-				<button type="button" class="btn btn-outline-light btn-lg" href="{% url 'signup' %}">Join Now!</button>
-			</div>
-		</div>
-	</div>
+            <div class="divcenter center clearfix" >
+                <img class="bottommargin" src="images/logo-side.png" alt="">
+                <h1>Welcome! This is <span>SIDE|SPACER</span>.</h1>
+                <h2>Need a workspace on the go?</h2>
+                <a href="#" class="button button-3d button-dark button-large ">Browse Spaces</a>
+                <a href="#" class="button button-3d button-large">Join Now</a>
+            </div>
 
-</div>
+            <div class="line"></div>
 
-<!--- Jumbotron -->
-<hr class="my-4">
+            <div class="col_one_third">
+                <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn">
+                    <div class="fbox-icon">
+                        <a href="#"><i class="icon-phone2"></i></a>
+                    </div>
+                    <h3>Spaces Everywhere</h3>
+                    <p>Any City, Any Suburb, Anywhere</p>
+                </div>
+            </div>
 
-<div class="container-fluid">
+            <div class="col_one_third">
+                <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="200">
+                    <div class="fbox-icon">
+                        <a href="#"><i class="icon-eye"></i></a>
+                    </div>
+                    <h3>Amazing Spaces for Amazing People</h3>
+                    <p>Don't settle for a rat race desk.</p>
+                </div>
+            </div>
 
-	<div class="row jumbotron">
-		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-			<p class="lead">For mobile professionals, startups, and business that need the extra deskpace!<br> Productive workspaces are available to help you get things done!<br> Our plans start at $99/month! </p>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-				<a href="#"> <button type="button" class="btn btn-outline-secondary btn-lg">Our Services</button></a>
-		</div>
-	</div>
+            <div class="col_one_third col_last">
+                <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="400">
+                    <div class="fbox-icon">
+                        <a href="#"><i class="icon-star2"></i></a>
+                    </div>
+                    <h3>Powerful Performance</h3>
+                    <p>Optimized code that are completely customizable and deliver unmatched fast performance.</p>
+                </div>
+            </div>
 
-</div>
+            <div class="clear"></div>
 
+            <div class="col_one_third">
+                <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="600">
+                    <div class="fbox-icon">
+                        <a href="#"><i class="icon-video"></i></a>
+                    </div>
+                    <h3>HTML5 Video</h3>
+                    <p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
+                </div>
+            </div>
+
+            <div class="col_one_third">
+                <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="800">
+                    <div class="fbox-icon">
+                        <a href="#"><i class="icon-params"></i></a>
+                    </div>
+                    <h3>Parallax Support</h3>
+                    <p>Display your Content attractively using Parallax Sections that have unlimited customizable
+                        areas.</p>
+                </div>
+            </div>
+
+            <div class="col_one_third col_last">
+                <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="1000">
+                    <div class="fbox-icon">
+                        <a href="#"><i class="icon-fire"></i></a>
+                    </div>
+                    <h3>Endless Possibilities</h3>
+                    <p>Complete control on each &amp; every element that provides endless customization
+                        possibilities.</p>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="col_one_third nobottommargin">
+                <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="1200">
+                    <div class="fbox-icon">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                    </div>
+                    <h3>Light &amp; Dark Color Schemes</h3>
+                    <p>Change your Website's Primary Scheme instantly by simply adding the dark class to the body.</p>
+                </div>
+            </div>
+
+            <div class="col_one_third nobottommargin">
+                <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="1400">
+                    <div class="fbox-icon">
+                        <a href="#"><i class="icon-heart2"></i></a>
+                    </div>
+                    <h3>Boxed &amp; Wide Layouts</h3>
+                    <p>Stretch your Website to the Full Width or make it boxed to surprise your visitors.</p>
+                </div>
+            </div>
+
+            <div class="col_one_third nobottommargin col_last">
+                <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="1600">
+                    <div class="fbox-icon">
+                        <a href="#"><i class="icon-note"></i></a>
+                    </div>
+                    <h3>Extensive Documentation</h3>
+                    <p>We have covered each &amp; everything in our Documentation including Videos &amp;
+                        Screenshots.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
 {% endblock %}
