@@ -30,7 +30,7 @@ SECRET_KEY = '5a@tkcbah13t_vb!6pp6#z1c3j-3abb!&$6r-mw+%0mtzg$qo@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sidespacer.herokuapp.com']
 
 
 # Application definition
