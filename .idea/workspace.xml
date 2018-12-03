@@ -2,10 +2,209 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d38b8196-418f-4ac8-92c3-dd4f1bb70242" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/sidespacer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/javascript/myScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Spaces/howitworks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Spaces/pricing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spaces/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spaces/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spaces/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spaces/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/Main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/camera-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/camera.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/colors-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/colors-rtl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/colors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/bs-datatable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/bs-editable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/bs-filestyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/bs-rating.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/bs-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/bs-switches.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/dark-components.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/ion.rangeslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/pricing-table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/radio-checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/rangeslider/sprite-skin-nice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/select-boxes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/components/timepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/dark-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/elastic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/et-line.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/et-line/et-line.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/et-line/et-line.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/et-line/et-line.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/et-line/et-line.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/font-icons-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/font-icons-snapchat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/font-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/Simple-Line-Icons.dev.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/Simple-Line-Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/Simple-Line-Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/Simple-Line-Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/Simple-Line-Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-icons-snapchat.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-icons-snapchat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-icons-snapchat.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-icons-snapchat.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/lined-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/lined-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/lined-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/lined-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/content.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/events.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/extras.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/helpers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/layouts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/pagetitle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/portfolio.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/alerts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/buttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/clients.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/countdown.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/counter-skills.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/dividers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/faqs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/feature-box.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/headings.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/misc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/overlay.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/pricing.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/process-steps.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/promo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/social-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/styled-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/team.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/testimonials.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/toggles-accordions.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/shortcodes/youtubebg.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/sliders.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/topbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/typography.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/imports/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/intro-fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/nivo-slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/onepage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/responsive-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style-import.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/swiper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/vmap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/chart-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/bs-datatable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/bs-editable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/bs-filestyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/bs-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/bs-switches.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/rangeslider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/responsive-tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/select-boxes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/selectsplitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/star-rating.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/timepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/components/typehead.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/events-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/jquery.calendario.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/jquery.camera.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/jquery.elastic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/jquery.gmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/jquery.mousewheel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/jquery.nivo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/jquery.vmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins-dynamic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.countdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.countto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.dribbble.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.fitvids.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.flexslider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.flickrfeed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.important.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.infinitescroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.instagram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.isotope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.magnific.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.owlcarousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.pagetransition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.paginate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.piechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.superfish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.swiper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.textrotator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.toastr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.twitterfeed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/plugins/jquery.youtube.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/continents/jquery.vmap.africa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/continents/jquery.vmap.asia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/continents/jquery.vmap.australia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/continents/jquery.vmap.europe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/continents/jquery.vmap.north-america.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/continents/jquery.vmap.south-america.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.algeria.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.argentina.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.brazil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.canada.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.europe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.france.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.germany.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.greece.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.iran.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.iraq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.russia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.sampledata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.tunisia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.turkey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.usa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/vmap/jquery.vmap.world.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Spaces/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Spaces/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Spaces/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Spaces/dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Spaces/font-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Spaces/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Spaces/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Spaces/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Spaces/responsive.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Spaces/space.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Spaces/space.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Spaces/style.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,21 +218,18 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Spaces/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="62" column="75" lean-forward="true" selection-start-line="62" selection-start-column="75" selection-end-line="62" selection-end-column="93" />
+            <state relative-caret-position="323">
+              <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="95" />
               <folding>
-                <element signature="n#footer#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2997#3002#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#8152#8157#0" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#small#0;n#a#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#small#0;n#a#1;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dark.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Spaces/dark.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="851" column="14" selection-start-line="851" selection-start-column="4" selection-end-line="851" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -41,17 +237,34 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Spaces/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2023">
-              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="2808">
+              <caret line="210" selection-start-line="210" selection-end-line="210" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#5;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Spaces/category.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="space.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Spaces/space.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="527">
+              <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -59,8 +272,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+            <state>
+              <caret selection-end-line="2" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
               </folding>
@@ -68,23 +281,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/registration/signup.html">
+      <file leaf-file-name="howitworks.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Spaces/howitworks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Space/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="544">
+              <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -101,6 +302,33 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pricing.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Spaces/pricing.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="231" column="36" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#p#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -110,6 +338,10 @@
       <find>margin-top</find>
       <find>Upcoming Events</find>
       <find>invetore</find>
+      <find>world</find>
+      <find>footer-widget-logo</find>
+      <find>widget</find>
+      <find>img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,10 +352,14 @@
       <list>
         <option value="$PROJECT_DIR$/Space/urls.py" />
         <option value="$PROJECT_DIR$/Space/settings.py" />
-        <option value="$PROJECT_DIR$/templates/Spaces/index.html" />
-        <option value="$PROJECT_DIR$/templates/Spaces/base.html" />
         <option value="$PROJECT_DIR$/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/templates/registration/signup.html" />
+        <option value="$PROJECT_DIR$/templates/Spaces/index.html" />
+        <option value="$PROJECT_DIR$/Spaces/urls.py" />
+        <option value="$PROJECT_DIR$/Spaces/views.py" />
+        <option value="$PROJECT_DIR$/templates/Spaces/base.html" />
+        <option value="$PROJECT_DIR$/templates/Spaces/howitworks.html" />
+        <option value="$PROJECT_DIR$/templates/Spaces/pricing.html" />
         <option value="$PROJECT_DIR$/templates/Spaces/space.html" />
       </list>
     </option>
@@ -154,6 +390,11 @@
             <path>
               <item name="SideSpacer" type="b2602c69:ProjectViewProjectNode" />
               <item name="SideSpacer" type="462c0819:PsiDirectoryNode" />
+              <item name="Spaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SideSpacer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SideSpacer" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -161,6 +402,12 @@
               <item name="SideSpacer" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SideSpacer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SideSpacer" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SideSpacer" type="b2602c69:ProjectViewProjectNode" />
@@ -179,6 +426,11 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="Spaces" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SideSpacer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SideSpacer" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -187,10 +439,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../other" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HTML" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\superuser\Desktop\app\SideSpacer\templates\Spaces" />
+      <recent name="C:\Users\superuser\Desktop\app\SideSpacer\static\javascript" />
+      <recent name="C:\Users\superuser\Desktop\app\SideSpacer\static\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\superuser\Desktop\app\SideSpacer\static\css" />
       <recent name="C:\Users\superuser\Desktop\app\SideSpacer\static" />
       <recent name="C:\Users\superuser\Desktop\app\SideSpacer" />
     </key>
@@ -249,12 +507,160 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/Spaces/base.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="75" selection-start-line="62" selection-start-column="75" selection-end-line="62" selection-end-column="93" />
+          <folding>
+            <element signature="e#2997#3002#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#8152#8157#0" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#a#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#a#1;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/dark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14467">
+          <caret line="851" column="14" selection-start-line="851" selection-start-column="4" selection-end-line="851" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#5;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/space.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Space/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#629#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Space/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="75" selection-start-line="62" selection-start-column="75" selection-end-line="62" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/dark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14467">
+          <caret line="851" column="14" selection-start-line="851" selection-start-column="4" selection-end-line="851" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Space/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Space/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#629#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/space.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/base.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding>
-            <element signature="n#footer#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -282,6 +688,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/dark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14467">
+          <caret line="851" column="14" selection-start-line="851" selection-start-column="4" selection-end-line="851" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Space/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/javascript/myScript.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spaces/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#27#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Space/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -292,69 +764,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Space/settings.py">
+    <entry file="file://$PROJECT_DIR$/Spaces/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Spaces/dark.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="851" column="14" selection-start-line="851" selection-start-column="4" selection-end-line="851" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="119">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Spaces/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2023">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Spaces/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="62" column="75" lean-forward="true" selection-start-line="62" selection-start-column="75" selection-end-line="62" selection-end-column="93" />
+        <state relative-caret-position="323">
+          <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="95" />
           <folding>
-            <element signature="n#footer#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2997#3002#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#8152#8157#0" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#a#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#a#1;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/howitworks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/pricing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="231" column="36" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/category.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Spaces/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2808">
+          <caret line="210" selection-start-line="210" selection-end-line="210" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#5;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Spaces/space.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="527">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>

@@ -20,6 +20,11 @@ def index(request):
 
     return render(request, 'Spaces/index.html', context_dict)
 
+def pricing(request):
+    return render(request, 'Spaces/pricing.html')
+
+def howitworks(request):
+    return render(request, 'Spaces/howitworks.html')
 
 def space(request):
     # Query the databse for a list of ALL categories currently stored.
