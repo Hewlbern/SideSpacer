@@ -2,12 +2,18 @@
 {% load staticfiles %}
 {% block content %}
 
+
+
 <div class="container clearfix">
 
     <div class="col_three_fifth bothsidebar nobottommargin">
+ <!-- Page Heading -->
 
-        <div class="fancy-title title-border">
-            <h3>Popular Spaces</h3>
+        <div>
+            <h1  class="display-3">Popular Spaces
+
+            </h1>
+<hr>
             {% if categories %}
         </div>
         {% for category in categories %}
@@ -31,9 +37,10 @@
                         <li><a href="#"><i class="icon-map-marker2"></i> Melbourne</a></li>
                     </ul>
                     <div class="entry-content">
-                        <a href="{% url 'signup' %}" class="btn btn-secondary" disabled="disabled">Buy Tickets</a>
+                        <a href="{% url 'signup' %}" class="btn btn-primary" >View Space</a>
                     </div>
                 </div>
+                <hr>
             </div>
 
         </div>
@@ -51,6 +58,5 @@
 
 
 </div>
-
 
 {% endblock %}

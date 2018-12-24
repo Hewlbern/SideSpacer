@@ -18,7 +18,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-
+#print(BASE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
@@ -72,7 +72,9 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+#print(STATIC_ROOT)
 
+#print(STATIC_DIR)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
