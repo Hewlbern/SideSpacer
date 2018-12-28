@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-
+try:
+    from secret import *
+except:print("Error: make a local version of private_settings.py from the template")
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 
@@ -25,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5a@tkcbah13t_vb!6pp6#z1c3j-3abb!&$6r-mw+%0mtzg$qo@'
+SECRET_KEY = SideSecret
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
