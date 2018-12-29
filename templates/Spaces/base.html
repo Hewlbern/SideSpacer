@@ -296,14 +296,16 @@
 </script>
 <!--<script>
 $(document).ready(function() {
-    $( ".nav-item" ).bind( "click", function(event) {
-        event.preventDefault();
-        var clickedItem = $( this );
-        $( ".nav-item" ).each( function() {
+    const linkLi = $( ".nav-item" );
+    const linkAnchor = $( ".nav-item a" ); // anchor is require to prevent for not to direct
+    linkAnchor.bind( "click", function(event) {
+        var clickedItem = $( this ).parent("li:first");
+        linkLi.each( function() {
             $( this ).removeClass( "active" );
         });
         clickedItem.addClass( "active" );
     });
+   $( ".nav-item a[href$='"+window.location.pathname+"']" ).parent("li:first").addClass("active");
 });
 </script> -->
 
