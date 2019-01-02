@@ -19,7 +19,6 @@ except:print("Error: make a local version of private_settings.py from the templa
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 #print(BASE_DIR)
 
 

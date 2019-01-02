@@ -1,50 +1,56 @@
 
 
-function RemoteWorkers() {
-    var x = document.getElementById("paragraph1");
-    var y = document.getElementById("paragraph2");
-    var z = document.getElementById("paragraph3");
-    if (x.style.display === "block") {
-        x.style.display = "block";
-        y.style.display = "none";
-        z.style.display = "none";
+function Swap1() {
+    var x = document.getElementById("HomeNav");
+    var y = document.getElementById("SpacesNav");
+    var z = document.getElementById("PricingNav");
+    var a = document.getElementById("HowitworksNav");
+    var b = document.getElementById("ContactNav");
+    var c = document.getElementById("LogOutNav");
+    var d = document.getElementById("SignUpNav");
+    var e = document.getElementById("LogInNav");
+    if (x.classList.contains ('active')) {
+        y.classList.remove('active');
+        z.classList.remove('active');
+        a.classList.remove('active');
+        b.classList.remove('active');
+        c.classList.remove('active');
+        d.classList.remove('active');
+        e.classList.remove('active');
 
     } else {
-        x.style.display = "block";
-        y.style.display = "none";
-        z.style.display = "none";
+        x.classList.contains ('active');
+        y.classList.remove('active');
+        z.classList.remove('active');
+        a.classList.remove('active');
+        b.classList.remove('active');
+        c.classList.remove('active');
+        d.classList.remove('active');
+        e.classList.remove('active');
     }
 }
 
 
-function Startups() {
-    var x = document.getElementById("paragraph1");
-    var y = document.getElementById("paragraph2");
-    var z = document.getElementById("paragraph3");
-    if (y.style.display === "none") {
-        y.style.display = "block";
-        x.style.display = "none";
-        z.style.display = "none";
-    } else {
-        y.style.display = "block";
-        x.style.display = "none";
-        z.style.display = "none";
-    }
+if (y.classList.contains ('active')) {
+    x.classList.remove('active');
+    z.classList.remove('active');
+    a.classList.remove('active');
+    b.classList.remove('active');
+    c.classList.remove('active');
+    d.classList.remove('active');
+    e.classList.remove('active');
+
+} else {
+    x.classList.contains ('active');
+    y.classList.remove('active');
+    z.classList.remove('active');
+    a.classList.remove('active');
+    b.classList.remove('active');
+    c.classList.remove('active');
+    d.classList.remove('active');
+    e.classList.remove('active');
 }
 
 
-function OfficeGoers() {
-    var x = document.getElementById("paragraph1");
-    var y = document.getElementById("paragraph2");
-    var z = document.getElementById("paragraph3");
-    if (z.style.display === "none") {
-        z.style.display = "block";
-        y.style.display = "none";
-        x.style.display = "none";
-    } else {
-        z.style.display = "block";
-        x.style.display = "none";
-        y.style.display = "none";
-    }
-}
+
 

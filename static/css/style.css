@@ -7,7 +7,7 @@ html, body {
   color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, {
   color: #303030;
 }
 
@@ -107,9 +107,18 @@ h1, h2, h3, h4, h5, p {
 
 /* Footer changes */
 
-#logotipic {
+.footer {
   text-align: center;
   background-color: #ebebeb;
+}
+
+.col-md-4 p {
+  color: #303030;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logotip img {
@@ -155,6 +164,10 @@ a {
 .instagramIcon {
   font-size: 40px;
   text-decoration: none;
+}
+
+.clear {
+  color:black;
 }
 
 

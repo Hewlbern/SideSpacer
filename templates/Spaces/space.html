@@ -10,10 +10,9 @@
  <!-- Page Heading -->
 
         <div>
-            <h1  class="display-3">Popular Spaces
+            <h1  class="display-3">Popular Spaces</h1>
+        <hr>
 
-            </h1>
-<hr>
             {% if categories %}
         </div>
         {% for category in categories %}
@@ -23,7 +22,7 @@
                 <div class="entry-image d-md-none d-lg-block">
                     <a href="#">
                         {% if category.image %}
-                        <img src="{{ category.image.url }}" alt="{{ category.name }}">
+                        <img src="{{ category.image.url }}"  alt="{{ category.name }}">
                         {% endif %}
                     </a>
                 </div>
