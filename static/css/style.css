@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, p {
 .jumbotron {
   padding: 1rem;
   border-radius: 0;
+  background-image: url(../images/mac.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .padding {
