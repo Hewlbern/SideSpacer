@@ -4,13 +4,13 @@
 
 
 
-<div class="container clearfix">
+<div class="container clearfix text-center">
 
     <div class="col_three_fifth bothsidebar nobottommargin">
  <!-- Page Heading -->
 
         <div>
-            <h1  class="display-3">Popular Spaces</h1>
+            <h1  class="display-4">Popular Spaces</h1>
         <hr>
 
             {% if categories %}
@@ -26,11 +26,11 @@
                         {% endif %}
                     </a>
                 </div>
-                <div class="entry-c">
+                <div class="entry-c text-center">
                     <div class="entry-title">
                         <h2><a href="{{ page.url }}">{{ category.name }}</a></h2>
                     </div>
-                    <ul class="entry-meta clearfix">
+                    <ul class="entry-meta text-center" style="padding:0px;">
                         <li><span class="badge badge-warning">Private</span></li>
                         <li><a href="#"><i class="icon-time"></i> 8:00 - 19:00</a></li>
                         <li><a href="#"><i class="icon-map-marker2"></i> Melbourne</a></li>
