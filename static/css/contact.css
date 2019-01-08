@@ -1,0 +1,35 @@
+#cover {
+    padding-bottom: 100px;
+    padding-top: 45px;
+}
+
+#heading1 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+#addressandreg {
+    background-color: #ebebeb;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+#logo {
+    padding: 1rem;
+}
+
+#paragraph1 {
+    padding-top:2rem;
+}
+
+#paragraph2 {
+    padding-top:2rem;
+}
+
+#picturediv {
+    padding-top: 2rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

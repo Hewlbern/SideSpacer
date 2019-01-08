@@ -26,6 +26,9 @@ def pricing(request):
 def howitworks(request):
     return render(request, 'Spaces/howitworks.html')
 
+def contact(request):
+    return render(request, 'Spaces/contact.html')
+
 def space(request):
     # Query the databse for a list of ALL categories currently stored.
     # Order the categories by no likes in descending order .

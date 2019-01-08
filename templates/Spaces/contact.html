@@ -1,0 +1,47 @@
+{% extends "Spaces/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<link href="{% static 'css/contact.css' %}" rel="stylesheet">
+
+<div class="container-fluid" id="cover">
+    <div class="row">
+        <div class="col-md-6 text-center" id="column1">
+            <h3 class="display-5" id="heading1">CONTACT US</h3>
+
+        <div class="company-info" id="addressandreg">
+
+            <div class="name display-4 text-center" id="logo">
+                <img src="{% static 'images/sidespacer.png' %}" width="120px;" height="45px;">
+            </div>
+
+            <div class="row">
+
+                <div class="address col-sm-6">
+                <p><strong>Headquarters: Melbourne<br>
+                    E-mail: info@sidespacer.com<br>
+                    Skype: SideSpaceronSkype</strong></p>
+                </div>
+
+                <div class="registration col-sm-6">
+                    <p><strong>Registered in Australia<br>
+                    Company number 123455</strong></p>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="display-5" id="paragraph1">Please do not hesitate to send us your questions, comments or suggestions –<br>
+             we read each and every e-mail, and would love to hear from you.</p>
+        <p class="display-5" id="paragraph2"><b>Please, also see below for the most frequently asked questions.</b></p>
+        </div>
+
+        <div class="col-md-6 text-center" id="picturediv">
+
+            <img src="{% static 'images/team3.png' %}" class="img-fluid">
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}
