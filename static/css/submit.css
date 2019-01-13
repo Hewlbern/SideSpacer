@@ -1,0 +1,33 @@
+#HeadingSubmit{
+    padding-top:60px;
+}
+
+#SubHeadingOne{
+    padding-top:45px;
+}
+
+#SubHeadingTwo{
+    padding-top: 75px;
+}
+
+#Paragraph1{
+    padding-top:15px;
+}
+
+#Info{
+    background-color: #ebebeb;
+}
+
+#leftcolumn{
+    padding-top: 15px;
+    font-size: 24px;
+}
+
+#leftcolumn, p {
+    color:black;
+}
+
+.class-unstyled {
+    color:black;
+    font-size: 18px;
+}
