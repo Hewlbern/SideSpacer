@@ -6,43 +6,50 @@
 		============================================= -->
 <section id="content">
 
-    <div class="content-wrap nopadding">
+        <div class="section">
 
-        <div class="section nopadding nomargin"
-             style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url(../images/parallax/home/9.jpg) center center no-repeat; background-size: cover;"></div>
+            <div class="container-fluid text-center">
 
-        <div class="section nobg full-screen nopadding nomargin">
-            <div class="container-fluid vertical-middle divcenter clearfix">
+                    <row>
 
+                    <div class="col-sm"></div>
 
-                <div class="card divcenter noradius noborder"
-                     style="max-width: 400px; background-color: rgba(255,255,255,0.93);">
-                    <div class="card-body" style="padding: 40px;">
+                    <div class="col-sm" style="padding-top:150px; padding-bottom:150px;">
 
-                        <form method="post">
-                            {% csrf_token %}
-                            {{ form.as_p }}
-                            <button type="submit">Login</button>
-                        </form>
+                    <div class="card" style="max-width: 400px; background-color: rgba(255,255,255,0.93); margin:auto;">
 
-                        <div class="line line-sm"></div>
+                        <div class="card-body" style="padding: 40px;">
 
-                        <div class="center">
-                            <h4 style="margin-bottom: 15px;">or Login with:</h4>
-                            <a class="nav-link" href="{% provider_login_url 'google' %}">Log In with Gmail<span
-                                    class="sr-only">(current)</span></a>
+                            <form method="post">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <button class="btn btn-primary" type="submit">Login</button>
+                            </form>
+
+                            <div class="line line-sm"></div>
+
+                            <div class="center">
+                                    <hr class="hr-text" data-content="OR">
+                                <a class="nav-link " href="{% provider_login_url 'google' %}">Login with <i class="fab fa-google"></i>-mail<span
+                                        class="sr-only">(current)</span></a>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="center dark">
-                    <small>Copyrights &copy; All Rights Reserved by Canvas Inc.</small>
-                </div>
+                    </div>
+
+                    <div class="center dark">
+                        <small>Copyrights &copy; All Rights Reserved by Canvas Inc.</small>
+                    </div>
+
+                    </div>
+
+                    <div class="col-sm"></div>
+
+                    </row>
 
             </div>
-        </div>
 
-    </div>
+        </div>
 
 </section><!-- #content end -->
 
