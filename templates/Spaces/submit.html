@@ -57,8 +57,8 @@
             <div class="col-sm-4"></div>
 
             <div class="col-sm-4">
-            <form>
-                    <select class="custom-select custom-select-lg mb-3" id="DropdownMenu">
+            <form name="form" action="#">
+                    <select class="custom-select custom-select-lg mb-3" name="typeoflocation" id="DropdownMenu">
                             <option selected>What type of a location is it?</option>
                             <option value="1">Restaurant</option>
                             <option value="2">Bar</option>
@@ -67,7 +67,7 @@
                             <option value="5">Other</option>
                     </select>
 
-                    <select class="custom-select custom-select-lg mb-3" id="DropdownMenu">
+                    <select class="custom-select custom-select-lg mb-3" name="location" id="DropdownMenu">
                             <option selected>In which city is your location?</option>
                             <option value="1">Melbourne</option>
                             <option value="2">Sydney</option>
@@ -75,22 +75,22 @@
                     </select>
 
                     <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="WHAT IS THE NAME OF THE LOCATION?">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="nameoftheplace" placeholder="WHAT IS THE NAME OF THE LOCATION?">
                     </div>
 
                     <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="WHAT IS THE WEBSITE URL?">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="url" placeholder="WHAT IS THE WEBSITE URL?">
                     </div>
 
                     <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="WHAT IS THE STREET ADDRESS?">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="address" placeholder="WHAT IS THE STREET ADDRESS?">
                     </div>
 
                     <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="WHAT IS THE SEATING CAPACITY">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="capacity" placeholder="WHAT IS THE SEATING CAPACITY">
                     </div>
 
-                    <select class="custom-select custom-select-lg mb-3" id="DropdownMenu">
+                    <select class="custom-select custom-select-lg mb-3" name="time" id="DropdownMenu">
                             <option selected>At what time does dinner service typically start?</option>
                             <option value="1">4:00pm</option>
                             <option value="2">4:30pm</option>
@@ -100,7 +100,7 @@
                             <option value="6">6:30pm</option>
                     </select>
 
-                    <select class="custom-select custom-select-lg mb-3" id="DropdownMenu">
+                    <select class="custom-select custom-select-lg mb-3" name="numberofdays" id="DropdownMenu">
                             <option selected>Which days would you like SideSpacer to operate in your space?</option>
                             <option value="1">7 Days a week</option>
                             <option value="2">Weekdays only</option>
@@ -115,29 +115,29 @@
                     </select>
 
                     <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="YOUR FIRST NAME">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="name"  placeholder="YOUR FIRST NAME">
                     </div>
 
                     <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="YOUR LAST NAME">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="lastname" placeholder="YOUR LAST NAME">
                     </div>
 
                     <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="YOUR PHONE NUMBER">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="phone" placeholder="YOUR PHONE NUMBER">
                     </div>
 
                     <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="YOUR EMAIL ADDRESS">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="email" placeholder="YOUR EMAIL ADDRESS">
                     </div>
 
-                    <select class="custom-select" multiple>
+                    <select class="custom-select" name="reach" multiple>
                             <option selected>What's the best way to reach you?</option>
                             <option value="1">Phone</option>
                             <option value="2">Text</option>
                             <option value="3">E-mail</option>
                           </select>
 
-                    <button class="btn btn-outline-secondary" type="submit" style="margin-top:25px; padding-left:20px; padding-right: 20px;
+                    <button name="submit" method="POST" class="btn btn-outline-secondary" type="submit" style="margin-top:25px; padding-left:20px; padding-right: 20px;
                     padding-top: 12px; padding-bottom:12px; margin-bottom: 20px;">Submit a Space</button>
 
                     <p class="text-muted">(Our Hospitality Team will follow up with you directly if they feel<br> your location is a good fit for SideSpacer.)</p>
