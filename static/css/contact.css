@@ -26,10 +26,3 @@
 #paragraph2 {
     padding-top:2rem;
 }
-
-#picturediv {
-    padding-top: 2rem;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
