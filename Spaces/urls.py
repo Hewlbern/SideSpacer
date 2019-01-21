@@ -5,7 +5,6 @@ from Spaces import views
 urlpatterns = [
 url(r'^$', views.index, name='index'),
 url(r'^pricing/$', views.pricing, name='pricing'),
-url(r'^howitworks/$', views.howitworks, name='howitworks'),
 url(r'^space/$', views.space, name='space'),
 url(r'^submit/$', views.submit, name='submit'),
 url(r'^contact/$', views.contact, name='contact'),
