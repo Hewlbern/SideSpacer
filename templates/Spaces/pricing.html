@@ -9,7 +9,7 @@
 
                 <h1 class="display-4">Flexible pricing</h1>
                 <p class="lead" >With a $5 Trial Day and no long term commitment required, <br> a Side Spacer membership is the perfect fit for your flexible lifestyle.</p>
-                <a href="#" class="btn btn-outline-secondary" style="padding: 15px;">SING UP FOR A $5 TRIAL DAY</a>
+                <a href="{% url 'signup' %}" class="btn btn-outline-secondary" style="padding: 15px;">SING UP FOR A $5 TRIAL DAY</a>
                 <p style="size: 10px; padding: 15px;">Your trial starts on your first visit a space.</p>
 
     </div>
@@ -27,7 +27,7 @@
                     <div class="card-body">
                       <h1 class="card-title pricing-card-title">$129<small class="text-muted">/ month</small></h1>
                       
-                      <button type="button" class="btn btn-lg btn-block btn-outline-primary" style="margin-top: 30px;">Choose</button>
+                      <button action="{% url 'signup' %}" type="button" class="btn btn-lg btn-block btn-outline-primary" style="margin-top: 30px;">Choose</button>
 
                       <ul class="list-unstyled mt-3 mb-4" style="color: #303030; padding-top: 25px;">
                             <li style="font-weight: bold;">Billed $129 annually</li>
@@ -106,9 +106,9 @@
                                     <img class="card-img-top" src='{% static "images/team3.png" %}'>
         
                                     <div class="card-body" style="text-align:center;">
-                                        <h3 class="card-title">Corkbuzz</h3>
-                                        <p class="small-caps">FLATIRON</p>
-                                        <p class="card-text">Cozy up in this quiet and inspiring work environment that’s only a block’s walk to the city center.</p>
+                                        <h3 class="card-title">Access to all locations</h3>
+                                        <p class="small-caps"></p>
+                                        <p class="card-text">Unlimited access to a growing network of spaces in New York and San Francisco. Drop in and be productive, wherever you are.</p>
                                         
                                     </div>
                                 </div>
@@ -122,9 +122,9 @@
                                     <img class="card-img-top" src='{% static "images/coffemachine1.jpg" %}' style="object-fit:contain;">
         
                                     <div class="card-body" style="text-align:center;">
-                                    <h3 class="card-title">Hearth</h3>
-                                    <p class="small-caps">East Village</p>
-                                    <p class="card-text">Nestled in the heart of the East Village, Hearth is a space that epitomizes warmth and comfort.</p>
+                                    <h3 class="card-title">Complimentary coffee & tea</h3>
+                                    <p class="small-caps"></p>
+                                    <p class="card-text">Our hospitality team ensures there is always plenty of freshly brewed  coffee and tea ready for you and your guests.</p>
                                     </div>
         
                                 </div>
@@ -143,12 +143,12 @@
         
                                 <div class="card" style="text-align: center;">
         
-                                    <img class="card-img-top" src='{% static "images/team3.png" %}'>
+                                    <img class="card-img-top" src='{% static "images/laptop.jpg" %}'>
         
                                     <div class="card-body" style="text-align:center;">
-                                        <h3 class="card-title">North 6th @ Kent </h3>
-                                    <p class="small-caps">Williamsburg</p>
-                                    <p class="card-text">Our space in Williamsburg is open 7 days a week & offers late hours to fit the needs of your unique day. Drop in and focus when you need to.</p>
+                                        <h3 class="card-title">High speed wifi & endless power outlets</h3>
+                                    <p class="small-caps"></p>
+                                    <p class="card-text">Walk in, check in, and get right to work. Really fast wifi and tons of power outlets make it easy to connect and recharge throughout your day.</p>
                                     </div>
         
                                 </div>
@@ -159,12 +159,12 @@
         
                                     <div class="card" style="text-align: center;">
             
-                                        <img class="card-img-top" src='{% static "images/team2.png" %}'>
+                                        <img class="card-img-top" src='{% static "images/team.jpg" %}'>
             
                                         <div class="card-body" style="text-align:center;">
-                                        <h3 class="card-title">Hearth</h3>
-                                        <p class="small-caps">East Village</p>
-                                        <p class="card-text">Nestled in the heart of the East Village, Hearth is a space that epitomizes warmth and comfort.</p>
+                                        <h3 class="card-title">Space to host guests and small meetings</h3>
+                                        <p class="small-caps"></p>
+                                        <p class="card-text">Work on a project, host a meeting, or meet a client at any of our locations. Our flexible guest policy makes it easy to always have a place to work & meet.</p>
                                         </div>
             
                                     </div>
