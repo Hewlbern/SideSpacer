@@ -32,6 +32,9 @@ def submit(request):
 def contact(request):
     return render(request, 'Spaces/contact.html')
 
+def pre_signup(request):
+    return render(request, 'Spaces/pre_signup.html')
+
 def space(request):
     # Query the databse for a list of ALL categories currently stored.
     # Order the categories by no likes in descending order .
