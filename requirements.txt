@@ -30,5 +30,6 @@ requests==2.19.1
 requests-oauthlib==1.0.0
 six==1.12.0
 urllib3==1.23
+waitress==1.2.1
 whitenoise==4.1.2
 wrapt==1.10.11
