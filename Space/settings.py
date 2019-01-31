@@ -32,7 +32,7 @@ DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #if DEBUG:
-SECRET_KEY = 'mysecretkey'
+SECRET_KEY = os.environ['SECRET_KEY']
 #else:
     #SECRET_KEY = SideSecret
 
@@ -149,6 +149,8 @@ AUTHENTICATION_BACKENDS = (
 )
 AUTH_USER_MODEL = 'users.CustomUser'
 SITE_ID = 1
+
+CSRF_COOKIE_SECURE = True
 
 LOGIN_REDIRECT_URL = 'home'
 # Internationalization
