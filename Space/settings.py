@@ -32,7 +32,7 @@ DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #if DEBUG:
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'SecretKeySideSpacer'
 #else:
     #SECRET_KEY = SideSecret
 
