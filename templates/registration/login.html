@@ -1,9 +1,16 @@
 {% extends "Spaces/base.html" %}
 {% block content %}
 {% load socialaccount %}
+{% load crispy_forms_tags %}
 
-<!-- Content
-		============================================= -->
+<style>
+        .asteriskField {
+            display: none;    
+        }
+</style>
+
+<!-- Content -->
+
 <section id="content">
 
         <div class="section">
@@ -20,9 +27,9 @@
 
                         <div class="card-body" style="padding: 40px;">
 
-                            <form method="post">
+                            <form method="post" style="color:black;" novalidate>
                                 {% csrf_token %}
-                                {{ form.as_p }}
+                                {{ form|crispy }}
                                 <button class="btn btn-primary" type="submit">Login</button>
                             </form>
 
@@ -51,7 +58,9 @@
 
         </div>
 
-</section><!-- #content end -->
+</section>
+
+<!-- Content End -->
 
 
 {% endblock %}

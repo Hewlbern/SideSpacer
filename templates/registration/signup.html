@@ -3,55 +3,66 @@
 
 {% load staticfiles %}
 {% load socialaccount %}
+{% load crispy_forms_tags %}
 
 <link href="{% static 'css/signup.css' %}" rel="stylesheet">
+
+<style>
+.asteriskField {
+    display: none;
+}
+</style>
 
 <section id="content">
 
             <div class="container-fluid text-center">
 
-                <row>
+                <div class="row justify-content-center">
 
-                <div class="col-sm"></div>
+                    <div class="col-sm"></div>
 
-                <div class="col-sm">
+                    <div class="col-sm">
+                        <div class="card" style="max-width: 295px; background-color: rgba(255,255,255,0.93); margin:auto;">
 
-                <div class="card" style="max-width: 295px; background-color: rgba(255,255,255,0.93); margin:auto;">
+                            <div class="card-body" style="padding: 30px;">
 
-                    <div class="card-body" style="padding: 30px;">
+                                <form method="post" style="color: black;" novalidate>
+                                    {% csrf_token %}
+                                    {{ form|crispy }}
+                                    <button class="btn btn-primary"type="submit">Sign up</button>
 
-                        <form method="post">
-                            {% csrf_token %}
-                            {{ form.as_p }}
-                            <button class="btn btn-primary"type="submit">Sign up</button>
+                                </form>
 
-                        </form>
+                                <div class="line line-sm"></div>
 
-                        <div class="line line-sm"></div>
+                                <div class="center">
 
-                        <div class="center">
+                                    <hr class="hr-text" data-content="OR">
+                                    <a class="nav-link" href="{% provider_login_url 'google' %}">Login with <i class="fab fa-google"></i>-mail<span
+                                            class="sr-only">(current)</span></a>
+                                </div>
 
-                            <hr class="hr-text" data-content="OR">
-                            <a class="nav-link" href="{% provider_login_url 'google' %}">Login with <i class="fab fa-google"></i>-mail<span
-                                    class="sr-only">(current)</span></a>
+                            </div>
+
                         </div>
+
+                        <div class="center dark">
+                            <small>Copyrights &copy; All Rights Reserved by Canvas Inc.</small>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm"></div>
 
                     </div>
 
                 </div>
 
-                <div class="center dark">
-                    <small>Copyrights &copy; All Rights Reserved by Canvas Inc.</small>
-                </div>
-
-                </div>
-
-                <div class="col-sm"></div>
-
                 </row>
 
-            </div>
 
-</section><!-- #content end -->
+</section>
+
+
 
 {% endblock %}

@@ -1,5 +1,3 @@
-
-# Create your views here.
 from django.http import HttpResponse
 from django.shortcuts import render
 from Spaces.models import Category, Page
@@ -25,9 +23,6 @@ def pricing(request):
 
 def howitworks(request):
     return render(request, 'Spaces/howitworks.html')
-
-def submit(request):
-    return render(request, 'Spaces/submit.html')
 
 def contact(request):
     return render(request, 'Spaces/contact.html')

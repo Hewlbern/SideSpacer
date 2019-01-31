@@ -20,11 +20,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from Spaces import views
-
+from submitaspace import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^Spaces/', include('Spaces.urls')),
+    #Submitting a Space
+    url(r'^submitaspace/', include('submitaspace.urls')),
     #Django Admin
     path('admin/', admin.site.urls),
     #User Management

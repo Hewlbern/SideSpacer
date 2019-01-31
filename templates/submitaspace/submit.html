@@ -1,0 +1,89 @@
+{% extends "Spaces/base.html" %}
+{% load staticfiles %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<link href="{% static 'css/submit.css' %}" rel="stylesheet">
+<style> 
+
+.asteriskField {
+    display: none;
+}
+
+</style>
+
+<!--- Heading -->
+
+<div class="container-fluid text-center">
+    <h1 class="display-3" id=HeadingSubmit>Submit a Space</h1>
+    <p class="display-5" id=SubheadingSubmit>Please read the following informations below.</p>    
+</div>
+
+<hr>
+
+<!-- Info -->
+
+<div class="container-fluid text-center" id="Info">
+    
+    <h3 class="display-5" id="SubHeadingOne">We are always expanding and new locations are the lifeblood of our growth.</h3>
+
+     <p id="Paragraph1">If you think that your restaurant or retail space would fit SideSpacer well,<br>
+      we would like to hear from you!</p>
+
+    <div class="row">
+
+        <div class="col-sm-6 text-center" id="leftcolumn">
+            <p>Our formula has been tested and adjusted,<br>
+            so here are some things we have learned which<br>
+            are important for the success of a new location<br>
+             on the SideSpacer.</p>
+        </div>
+
+        <div class="col-sm-6 text-left">
+            <ul class="class-unstyled">
+                <li>Closed during the day to patrons (if it's a restaurant)</li>
+                <li>Seats at least 80 people (ideally more)</li>
+                <li>Beautiful, interesting interior</li>
+                <li>Great natural light</li>
+                <li>Convenient street level access</li>
+                <li>Accessible by public transportation or is in a highly trafficked area</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h3 class="display-5" id="SubHeadingTwo">If you think your space meets these criteria, tell us about it by filling out the form.</h3>
+    </div>
+
+
+    <!--- Form --->
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+
+            <div class="col-sm-4"></div>
+
+            <div class="col-sm-4">
+
+                <form method="post" novalidate style="color:black;">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-outline-secondary" style="margin-top:10px; padding-left:30px; padding-right: 30px;
+                    padding-top: 8px; padding-bottom:8px; margin-bottom: 20px;">Submit</button>
+                </form>
+
+                <p class="text-muted">(Our Hospitality Team will follow up with you directly if they feel<br> your location is a good fit for SideSpacer.)</p>
+
+            </div>
+
+            <div class="col-sm-4"></div>
+
+        </div>
+
+    </div> 
+
+
+   </div>
+
+{% endblock %}
