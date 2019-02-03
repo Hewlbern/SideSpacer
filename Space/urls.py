@@ -21,12 +21,18 @@ from django.conf.urls.static import static
 
 from Spaces import views
 from submitaspace import views
+from product.views import ProductListView, product_list_view, ProductDetailView, product_detail_view
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^Spaces/', include('Spaces.urls')),
     #Submitting a Space
     url(r'^submitaspace/', include('submitaspace.urls')),
+    #Product
+    url(r'^products/$', ProductListView.as_view()),
+    url(r'^products-fbv/$', product_list_view),
+    url(r'^products/(?P<pk>\d+)/$', ProductDetailView.as_view()),
+    url(r'^products-fbv/(?P<pk>\d+)/$', product_detail_view),
     #Django Admin
     path('admin/', admin.site.urls),
     #User Management

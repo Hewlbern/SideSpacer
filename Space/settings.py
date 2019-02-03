@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'submitaspace',
+    'product',
     'phonenumber_field',
     'multiselectfield',
     'crispy_forms'
