@@ -2,19 +2,18 @@
 {% load staticfiles %}
 {% block content %}
 
-
-
-<div class="container clearfix text-center">
-
-    <div class="col_three_fifth bothsidebar nobottommargin">
  <!-- Page Heading -->
+<div class="container text-center" style="padding-top:20px;">
+    <h1  class="display-4">Popular Spaces</h1>
+    <hr>
+</div>
+ <div class="containter-fluid">
 
-        <div>
-            <h1  class="display-4">Popular Spaces</h1>
-        <hr>
-
+    <div class="row" style="margin:auto">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+    
             {% if categories %}
-        </div>
         {% for category in categories %}
         <div id="posts" class="events small-thumbs">
 
@@ -48,10 +47,9 @@
         <strong>There are no Spaces present.</strong>
         {% endif %}
 
-    </div>
-    <div style ="height:180px;" id="mapid"></div>
-    <div class="col_two_fifth nobottommargin col_last">
-     <div id="mapid"></div>
+
+        </div>
+        <div class="col-sm-4"></div>
 
     </div>
 
