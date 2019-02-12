@@ -152,7 +152,7 @@ AUTHENTICATION_BACKENDS = (
 AUTH_USER_MODEL = 'users.CustomUser'
 SITE_ID = 1
 
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
 
 LOGIN_REDIRECT_URL = 'home'
 # Internationalization

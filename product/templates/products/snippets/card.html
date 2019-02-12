@@ -5,9 +5,11 @@
         {% endif %}
         <div class="card-body">
         <h5 class="card-title" style="font-size:32px;">{{ instance.title }}</h5>
-        <div class="card-title pricing-card-title" style="color:black; font-size:40px;">${{ instance.price }} <small class="text-muted">/mo</small></div>
+        <div class="card-title pricing-card-title" style="color:black; font-size:40px;">${{ instance.price }} {% if instance.title == 'Annual' %}{% else %}<small class="text-muted">/mo</small>{% endif %}</div>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="{{ instance.get_absolute_url }}" class="btn btn-primary">Checkout</a>
         </div>
     </div>
 </div>
+
+
