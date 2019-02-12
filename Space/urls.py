@@ -21,24 +21,23 @@ from django.conf.urls.static import static
 
 from Spaces import views
 from submitaspace import views
-from product.views import ProductListView, product_list_view, ProductDetailView, product_detail_view
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^Spaces/', include('Spaces.urls')),
+    #Spaces
+    url(r'^Spaces/', include(('Spaces.urls', 'Spaces'), namespace='Spaces')),
     #Submitting a Space
-    url(r'^submitaspace/', include('submitaspace.urls')),
+    url(r'^submitaspace/', include(('submitaspace.urls', 'submitaspace'), namespace='submitaspace')),
     #Product
-    url(r'^products/$', ProductListView.as_view()),
-    url(r'^products-fbv/$', product_list_view),
-    url(r'^products/(?P<pk>\d+)/$', ProductDetailView.as_view()),
-    url(r'^products-fbv/(?P<pk>\d+)/$', product_detail_view),
+    url(r'^products/', include(('product.urls', 'products'), namespace='products')),
+    #Carts
+    url(r'^cart/' , include(("carts.urls",'carts'), namespace='cart')),
     #Django Admin
     path('admin/', admin.site.urls),
     #User Management
     url(r'^accounts/', include('allauth.urls')),
-    path(r'^users/', include('users.urls')),
-    path(r'^users/', include('django.contrib.auth.urls')),
+    path('users/', include('users.urls')),
+    path('users/', include('django.contrib.auth.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,46 @@
+{% extends "spaces/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<link href="{% static 'css/cartshome.css' %}" rel="stylesheet">
+
+<div class="container text-center" id="wrapper">
+
+  <h1 id="heading1">Shopping cart</h1>
+
+      {% if cart.products.exists %}
+      <table class="table" style="color:black;" id="table1">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Product name</th>
+                  <th scope="col">Product Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                  {% for product in cart.products.all %}
+                <tr>
+                  <th scope="row">{{ forloop.counter }}</th>
+                  <td><a href='{{ product.get_absolute_url }}' style="text-decoration: none; font-size:22px;">{{ product.title }}</a> 
+                      {% include 'products/snippets/update-cart.html' with product=product cart=cart in_cart=True %}
+                  </td>
+                  <td>${{ product.price }}</td>
+                </tr>
+                  {% endfor %}
+                <tr>
+                  <td colspan="2"></td>
+                  <td><b>Total</b> ${{ cart.total }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="col-sm-12">
+            <a href="{{ product_list_url }}" id="button1" class="btn btn-primary">Billing plans</a>
+            </div>
+      {% else %}
+
+      <p class="lead">Greetings, your cart is currently empty.</p>
+      <a href="{{ product_list_url }}" id="button1" class="btn btn-primary">Billing plans</a>
+      
+      {% endif %}
+</div>
+{% endblock %}

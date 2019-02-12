@@ -1,0 +1,24 @@
+{% extends "Spaces/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<link href="{% static 'css/detail.css' %}" rel="stylesheet">
+
+<div class="row text-center" style="margin:auto;" id="row1">
+    <div class="col"></div>
+    <div class="col-md-6" style="color:black;">
+
+        <h1>{{ object.title }}</h1>
+
+        <p id="description">{{ object.description }}</p> <br/>
+
+        <p id="price">${{ object.price }}</p> <br/>
+
+        {% include 'products/snippets/update-cart.html' with product=object cart=cart %}
+
+    </div>
+    <div class="col"></div>
+</div>
+
+
+{% endblock %}

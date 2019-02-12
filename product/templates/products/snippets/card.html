@@ -1,0 +1,13 @@
+<div class="col-sm-12 justify-content-center text-center">
+    <div class="card" style="width: 18rem; margin:auto;">
+        {% if isntance.image %}
+        <img class="card-img-top" src="{{ instance.image.url }}" alt="Card image cap">
+        {% endif %}
+        <div class="card-body">
+        <h5 class="card-title" style="font-size:32px;">{{ instance.title }}</h5>
+        <div class="card-title pricing-card-title" style="color:black; font-size:40px;">${{ instance.price }} <small class="text-muted">/mo</small></div>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="{{ instance.get_absolute_url }}" class="btn btn-primary">Checkout</a>
+        </div>
+    </div>
+</div>

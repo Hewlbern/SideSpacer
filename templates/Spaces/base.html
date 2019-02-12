@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--{% url 'carts:home' as cart_url %}-->
+{% url 'index' as index_url %}
+{% url 'Spaces:space' as spaces_url %}
+{% url 'submitaspace:submit' as submitaspace_url %}
+{% url 'Spaces:pricing' as pricing_url %}
+{% url 'Spaces:contact' as contact_url %}
+{% url 'products:list' as product_list_url %}
+{% url 'cart:home' as cart_url %}
 {% load staticfiles %}
 <html>
 <head>
@@ -60,11 +68,12 @@
 
 							<ul class="navbar-nav ml-auto">
 
-								<li class="nav-item active" id="HomeNav"><a class="nav-link" href="/Spaces">Home</a></li>
-                                <li class="nav-item" id="SpacesNav"><a class="nav-link" href="/Spaces/space">Spaces</a></li>
-                                <li class="nav-item" id="SubmitNav"><a class="nav-link" href="/submitaspace/submit">Submit a Space</a></li>
-								<li class="nav-item" id="PricingNav"><a class="nav-link" href="/Spaces/pricing">Prices</a></li>
-                                <li class="nav-item" id="ContactNav"><a class="nav-link" href="/Spaces/contact">Contact</a></li>
+								<li class="nav-item {% if request.path == index_url %}active{% endif %}" id="HomeNav"><a class="nav-link" href="{{ index_url }}">Home</a></li>
+                                <li class="nav-item {% if request.path == spaces_url %}active{% endif %}" id="SpacesNav"><a class="nav-link" href="{{ spaces_url }}">Spaces</a></li>
+                                <li class="nav-item {% if request.path == submitaspace_url %}active{% endif %}" id="SubmitNav"><a class="nav-link" href="{{ submitaspace_url }}">Submit a Space</a></li>
+								<li class="nav-item {% if request.path == pricing_url %}active{% endif %}" id="PricingNav"><a class="nav-link" href="{{ pricing_url }}">Prices</a></li>
+                                <li class="nav-item {% if request.path == contact_url %}active{% endif %}" id="ContactNav"><a class="nav-link" href="{{ contact_url }}">Contact</a></li>
+                                <li class="nav-item {% if request.path == cart_url %}active{% endif %}" id="CartnNav"><a class="nav-link" href="{{ cart_url }}">{{ request.session.cart_items }} <i class="fas fa-shopping-cart"></i></a></li>
                                 {% if user.is_authenticated %}
                                 <li class="nav-item" id="LogOutNav"><a class="nav-link" href="{% url 'logout' %}">Log out
                                     {{user.username}}</a></li>
