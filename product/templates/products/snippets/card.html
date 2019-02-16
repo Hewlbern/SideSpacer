@@ -1,15 +1,28 @@
-<div class="col-sm-12 justify-content-center text-center">
-    <div class="card" style="width: 18rem; margin:auto;">
-        {% if isntance.image %}
-        <img class="card-img-top" src="{{ instance.image.url }}" alt="Card image cap">
-        {% endif %}
-        <div class="card-body">
-        <h5 class="card-title" style="font-size:32px;">{{ instance.title }}</h5>
-        <div class="card-title pricing-card-title" style="color:black; font-size:40px;">${{ instance.price }} {% if instance.title == 'Annual' %}{% else %}<small class="text-muted">/mo</small>{% endif %}</div>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="{{ instance.get_absolute_url }}" class="btn btn-primary">Checkout</a>
-        </div>
+<script>
+document.getElementById("myButton").onclick = function () {
+        location.href = "{{ instance.get_absolute_url }}";
+    };
+</script>
+
+
+    <div class="card mb-4 shadow-sm wow fadeInUp" >
+
+            <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{{ instance.title }}</h4>
+            </div>
+
+            <div class="card-body">
+            <h1 class="card-title pricing-card-title">${{ instance.price }} {% if instance.title == 'Annual' %}<small class="text-muted">/year</small>{% else %}<small class="text-muted">/mo</small>{% endif %}</h1>
+            
+            <button onclick="location.href='{{ instance.get_absolute_url }}'" type="submit" class="btn btn-lg btn-block btn-outline-primary" style="margin-top: 30px;">Choose</button>
+
+            <ul class="list-unstyled mt-3 mb-4" style="color: #303030; padding-top: 25px;">
+                    <li style="font-weight: bold;">Billed ${{ instance.price }} {% if instance.title == 'Annual' %}Anually{% else %}Monthly{% endif %}</li>
+                </ul>
+            </div>
+
     </div>
-</div>
+
+
 
 
