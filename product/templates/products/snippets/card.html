@@ -12,16 +12,29 @@ document.getElementById("myButton").onclick = function () {
             </div>
 
             <div class="card-body">
-            <h1 class="card-title pricing-card-title">${{ instance.price }} {% if instance.title == 'Annual' %}<small class="text-muted">/year</small>{% else %}<small class="text-muted">/mo</small>{% endif %}</h1>
+            <h1 class="card-title pricing-card-title">${{ instance.price }}<small class="text-muted">/mo</small></h1>
             
             <button onclick="location.href='{{ instance.get_absolute_url }}'" type="submit" class="btn btn-lg btn-block btn-outline-primary" style="margin-top: 30px;">Choose</button>
 
             <ul class="list-unstyled mt-3 mb-4" style="color: #303030; padding-top: 25px;">
-                    <li style="font-weight: bold;">Billed ${{ instance.price }} {% if instance.title == 'Annual' %}Anually{% else %}Monthly{% endif %}</li>
+                    <li style="font-weight: bold;">Billed {% if instance.title == 'Annual' %} ${{ instance.price|add:"1080" }} Annually{% endif %}
+                        {% if instance.title == '3 - Month Subscription' %} ${{ instance.price|add:"240" }} Quarterly{% endif %}
+                        {% if instance.title == 'Monthly Subscription' %} ${{ instance.price }} Monthly{% endif %}
+                    </li>
                 </ul>
             </div>
 
     </div>
+
+    <!-- Billed 360 quarterly
+    120$ monthly billed 1200 annually
+    Contact - No border
+
+    drecava boja dugmeta za Trial
+
+    isti br karaktera na karticama
+-->
+
 
 
 
