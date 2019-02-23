@@ -9,9 +9,8 @@
 </div>
  <div class="containter-fluid">
 
-    <div class="row" style="margin:auto">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
+    <div class="row justify-content-center" style="margin:auto">
+    <div class="col-sm-6">
     
             {% if categories %}
         {% for category in categories %}
@@ -25,17 +24,16 @@
                         {% endif %}
                     </a>
                 </div>
-                <div class="entry-c text-center">
+                <div class="entry-c text-center" style="padding-top:20px;">
                     <div class="entry-title">
                         <h2><a href="{{ page.url }}">{{ category.name }}</a></h2>
                     </div>
                     <ul class="entry-meta text-center" style="padding:0px;">
-                        <li><span class="badge badge-warning">Private</span></li>
                         <li><a href="#"><i class="icon-time"></i> 8:00 - 19:00</a></li>
                         <li><a href="#"><i class="icon-map-marker2"></i> Melbourne</a></li>
                     </ul>
                     <div class="entry-content">
-                        <a href="{% url 'signup' %}" class="btn btn-primary" >View Space</a>
+                        <a href="{% url 'signup' %}" class="btn btn-secondary" >View Space</a>
                     </div>
                 </div>
                 <hr>
@@ -49,8 +47,6 @@
 
 
         </div>
-        <div class="col-sm-4"></div>
-
     </div>
 
 
