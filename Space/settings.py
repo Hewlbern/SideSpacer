@@ -19,14 +19,6 @@ except:print("Error: make a local version of private_settings.py from the templa
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-#print(BASE_DIR)
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
-
-
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -35,6 +27,14 @@ DEBUG = True
 SECRET_KEY = 'SecretKeySideSpacer'
 #else:
     #SECRET_KEY = SideSecret
+
+if DEBUG:
+    STRIPE_PUBLISHABLE_KEY = 'pk_test_FMNqEtPw9DK5Sbty3sj1AoGU'
+    STRIPE_SECRET_KEY = 'sk_test_s8t4a5sw1OoBFdKElK9lI8Mo'
+else:
+    STRIPE_PUBLISHABLE_KEY = ''
+    STRIPE_SECRET_KEY = ''
+
 
 ALLOWED_HOSTS = ['127.0.0.1','sidespacer.herokuapp.com', 'sidespacer.com', 'www.sidespacer.com']
 
@@ -50,17 +50,19 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'users',
-    'Spaces',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-    'submitaspace',
-    'product',
-    'carts',
+    'stripe',
     'phonenumber_field',
     'multiselectfield',
-    'crispy_forms'
+    'crispy_forms',
+
+    #My Apps
+    'Spaces',
+    'submitaspace',
+    'memberships',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -87,6 +89,7 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 #print(STATIC_ROOT)
+
 
 #print(STATIC_DIR)
 TEMPLATES = [
@@ -167,9 +170,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
+SIGNUP_REDIRECT_URL = 'memberships'
 LOGIN_REDIRECT_URL = 'index'
 LOGOUT_REDIRECT_URL = 'index'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+
 

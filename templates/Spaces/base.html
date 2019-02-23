@@ -5,8 +5,8 @@
 {% url 'submitaspace:submit' as submitaspace_url %}
 {% url 'Spaces:pricing' as pricing_url %}
 {% url 'Spaces:contact' as contact_url %}
-{% url 'products:list' as product_list_url %}
-{% url 'cart:home' as cart_url %}
+{% url 'memberships:select' as memberships_url %}
+{% url 'memberships:profile' as profile_url %}
 {% load staticfiles %}
 <html>
 <head>
@@ -71,11 +71,11 @@
 								<li class="nav-item {% if request.path == index_url %}active{% endif %}" id="HomeNav"><a class="nav-link" href="{{ index_url }}">Home</a></li>
                                 <li class="nav-item {% if request.path == spaces_url %}active{% endif %}" id="SpacesNav"><a class="nav-link" href="{{ spaces_url }}">Spaces</a></li>
                                 <li class="nav-item {% if request.path == submitaspace_url %}active{% endif %}" id="SubmitNav"><a class="nav-link" href="{{ submitaspace_url }}">Submit a Space</a></li>
-								<li class="nav-item {% if request.path == product_list_url %}active{% endif %}" id="PricingNav"><a class="nav-link" href="{{ product_list_url }}">Prices</a></li>
+								<li class="nav-item {% if request.path == memberships_url %}active{% endif %}" id="PricingNav"><a class="nav-link" href="{{ memberships_url }}">Prices</a></li>
                                 <li class="nav-item {% if request.path == contact_url %}active{% endif %}" id="ContactNav"><a class="nav-link" href="{{ contact_url }}">Contact</a></li>
-                                <li class="nav-item {% if request.path == cart_url %}active{% endif %}" id="CartnNav"><a class="nav-link" href="{{ cart_url }}">{{ request.session.cart_items }} <i class="fas fa-shopping-cart"></i></a></li>
                                 {% if user.is_authenticated %}
-                                <li class="nav-item" id="LogOutNav"><a class="nav-link" href="{% url 'logout' %}">Log out
+                                <li class="nav-item {% if request.path == profile_url %}active{% endif %}" id="ContactNav"><a class="nav-link" href="{{ profile_url }}">My Account</a></li>
+                                <li class="nav-item" id="LogOutNav"><a class="nav-link" href="{% url 'logout' %}">Sign Out
                                     {{user.username}}</a></li>
                                 {% else %}
                                 <li class="nav-item" id="SignUpNav"><a class="nav-link" href="/Spaces/pre_signup/">Sign Up</a></li>
@@ -95,11 +95,11 @@
 {% endblock %}
 
 
-<hr style="padding-bottom:10px; ">
+
 
 <!-- ========= Footer ======== -->
 
-<footer id="footer" style="background-color: #ebebeb;">
+<footer id="footer" style="background-color: #2d2d2d;">
 
 <div class="container">
 
@@ -114,18 +114,18 @@
 
                     <div class="widget clearfix">
 
-                        <hr class="light">
-                        <p>We believe in <strong>Universal</strong>, <strong>Creative</strong> &amp;
+                        <hr class="light" style="border-color:white;">
+                        <p style="color:white;">We believe in <strong>Universal</strong>, <strong>Creative</strong> &amp;
                             <strong>Flexible</strong> WorkSpaces.</p>
-                        <hr class="light">
+                        <hr class="light" style="border-color:white;">
 
-                            <address><p><strong>Headquarters:</strong><br>
+                            <address style="color:white;"><p style="color:white;"><strong style="color:white;">Headquarters:</strong><br>
                                 Melbourne, Australia<br></p>
                             </address>
 
                             <abbr title="Email Address">
-                                <p style="margin-bottom:0px;"><strong>Email:</strong></p></abbr>
-                                <p style="margin-bottom:0px;">info@sidespacer.com</p>
+                                <p style="margin-bottom:0px; color:white;"><strong>Email:</strong></p></abbr>
+                                <p style="margin-bottom:0px; color:white;">info@sidespacer.com</p>
                                    
                     </div>
 
@@ -136,15 +136,15 @@
 
                     <div class="widget widget_links clearfix">
 
-                        <hr class="light">
-					    <h5><b>Contact</b></h5>
-					    <hr class="light">
+                        <hr class="light" style="border-color:white;">
+					    <h5 style="color:white;">Contact</h5>
+					    <hr class="light" style="border-color:white;">
                         
-                            <a href="/Spaces/contact/" style="text-decoration:none;"><p>Help Center</p></a>
-                            <a href="/Spaces/contact/" style="text-decoration:none;"><p>Contact Us</p></a>
-                            <a href="/Spaces/contact/" style="text-decoration:none;"><p>Careers</p></a>
-                            <a href="/submitaspace/submit/" style="text-decoration:none;"><p>Submit a Space</p></a>
-                            <a href="{% url 'signup' %}" style="text-decoration:none;"><p>Submit an Event</p></a>
+                            
+                            <a href="/Spaces/contact/" style="text-decoration:none;"><p style="color:white;">Contact Us</p></a>
+                            
+                            <a href="/submitaspace/submit/" style="text-decoration:none;"><p style="color:white;">Submit a Space</p></a>
+                            <a href="{% url 'signup' %}" style="text-decoration:none;"><p style="color:white;">Submit an Event</p></a>
 
                     </div>
 
@@ -154,11 +154,11 @@
 
                 <div class="widget subscribe-widget clearfix">
 
-                    <hr class="light">
-                    <h5 class="nobottommargin">Clients</h5>
-                    <hr class="light">
+                    <hr class="light" style="border-color:white;">
+                    <h5 class="nobottommargin" style="color:white;">Clients</h5>
+                    <hr class="light" style="border-color:white;">
 
-                    <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside
+                    <h5 style="color:white;"><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside
                         Scoops:</h5>
                     
                     <div class="widget-subscribe-form-result">
@@ -228,7 +228,7 @@
         <div class="container clearfix">
 
             <div class="col_half text-center">
-                <p><b>SIDESPACER COPYRIGHT</b></p>
+                <p style="color:white;"><b>SIDESPACER COPYRIGHT</b></p>
                 <div class="copyright-links"><p><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></p></div>
             </div>
 
@@ -276,10 +276,10 @@
                 </div>
 
                 <div class="clear text-center">
-                    <p style="margin-bottom:0px;">
-                <i class="fa fa-envelope" style="font-size:10px; color:black;"> </i>  info@sidespacer.com   <span class="middot">&middot;</span>
-                <i class="fa fa-phone" style="font-size:10px; color:black;"> </i>  +91-11-6541-6369  <span class="middot">&middot;</span>
-                <i class="fa fa-headphones" style="font: size 10px; color:black;" aria-hidden="true"> </i>  SideSpaceronSkype  <span class="middot">&middot;</span>
+                    <p style="margin-bottom:0px; color:white;">
+                <i class="fa fa-envelope" style="font-size:10px; color:white;"> </i>  info@sidespacer.com  <span class="middot">&middot;</span>
+                <i class="fa fa-phone" style="font-size:10px; color:white;"> </i>  +91-11-6541-6369  <span class="middot">&middot;</span>
+                <i class="fa fa-headphones" style="font: size 10px; color:white;" aria-hidden="true"> </i>  SideSpaceronSkype  <span class="middot">&middot;</span>
                         </p>
                 </div>
             </div>

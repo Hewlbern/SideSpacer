@@ -1,0 +1,33 @@
+<div class="card mb-4 shadow-sm wow fadeInUp" >
+
+        <div class="card-header">
+        <h4 class="my-0 font-weight-normal">{{ object.membership_type }}</h4>
+        </div>
+
+        <div class="card-body">
+        <h1 class="card-title pricing-card-title">
+                {% if object.membership_type == 'Annual' %} ${{ object.price|add:"-1100" }}<small class="text-muted">/month</small>{% endif %}
+                {% if object.membership_type == '3 - Month Subscription' %} ${{ object.price|add:"-240" }}<small class="text-muted">/month</small>{% endif %}
+                {% if object.membership_type == 'Monthly' %} ${{ object.price }}<small class="text-muted">/month</small>{% endif %}</h1>
+        
+        <form method="POST" action="{% url 'memberships:select' %}">
+            {% csrf_token %}
+        {% if object.membership_type != current_membership %}
+        <button type="submit" class="btn btn-lg btn-block btn-outline-primary" style="margin-top: 30px;">Choose</button>
+        {% else %}
+        <button type="submit" class="btn btn-lg btn-block btn-outline-danger" style="margin-top: 30px;">Current</button>
+        {% endif %}
+        <input type="hidden" name="membership_type" value="{{ object.membership_type }}"/>
+        </form>
+        
+        
+        
+        <ul class="list-unstyled mt-3 mb-4" style="color: #303030; padding-top: 25px;">
+                <li style="font-weight: bold;">Billed {% if object.membership_type == 'Annual' %} ${{ object.price }} Annually{% endif %}
+                    {% if object.membership_type == '3 - Month Subscription' %} ${{ object.price }} Quarterly{% endif %}
+                    {% if object.membership_type == 'Monthly' %} ${{ object.price }} Monthly{% endif %}
+                </li>
+            </ul>
+        </div>
+
+</div>

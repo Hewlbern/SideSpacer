@@ -1,0 +1,243 @@
+{% extends 'Spaces/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center wow fadeInUp">
+        
+        <h1 class="display-4">Flexible pricing</h1>
+        <p class="lead" >With a $5 Trial day and no long term commitment required, <br> a Side Spacer membership is the perfect fit for your flexible lifestyle.</p>
+        {% for object in object_list %}
+            {% if object.membership_type != "Annual" %}
+            {% if object.membership_type != "3 - Month Subscription" %}
+            {% if object.membership_type != "Monthly" %}
+            {% if object.membership_type != "Free Membership" %}
+            <form method="POST" action="{% url 'memberships:select' %}">
+                    {% csrf_token %}
+            <button type="submit" class="btn btn-lg btn-success" style="margin-top: 30px;">SING UP FOR A $5 {{ object.trialday }}TRIAL DAY</button>
+            <input type="hidden" name="membership_type" value="{{ object.membership_type }}"/>
+            </form>
+            {% endif %}
+            {% endif %}
+            {% endif %}
+            {% endif %}
+
+        {% endfor %}
+        <p style="size: 10px; padding: 15px;">Your trial starts on your first visit a space.</p>
+        
+</div>
+
+<div class="container justify-content-center">
+        <div class="card-deck mb-3 text-center"style="margin:auto;">
+        {% for object in object_list %}
+            {% if object.membership_type != "Trial Day" %}
+            {% if object.membership_type != "Free Membership" %}
+            {% include 'memberships/snippets/card.html' %}
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+
+    </div>
+</div>
+
+       <!-- Quick Heading -->
+
+       <hr>
+       <p class="lead" style="text-align: center">Interested in SideSpacer memberships for your employees? <a href="/Spaces/contact">Let's talk</a></p>
+       <hr>
+
+       <!-- 4 Cards and Heading -->
+
+       <div class="containter-fluid" style="background: #ebebeb">
+
+           <div class="container-fluid" style="text-align:center; padding-top:135px; padding-bottom:50px;">
+
+               <h1>All Side Spacer memberships<br>include the following</h1>
+
+           </div>
+
+           <div class="container-fluid">
+
+                   <div class="row justify-content-center">
+                           <div class="col-sm-4 wow animated fadeInUp" data-wow-duration="3s" style="text-align:center;">
+       
+                               <div class="card" style="text-align: center;">
+       
+                                   <img class="card-img-top" src='{% static "images/sedonpricing.jpg" %}'>
+       
+                                   <div class="card-body" style="text-align:center;">
+                                       <h3 class="card-title">Access to all locations</h3>
+                                       <p class="small-caps"></p>
+                                       <p class="card-text">Unlimited access to a growing network of spaces in New York and San Francisco. Drop in and be productive, wherever you are.</p>
+                                       
+                                   </div>
+                               </div>
+       
+                           </div>
+                       
+                           <div class="col-sm-4 wow animated fadeInUp" data-wow-duration="3s" style="text-align:center;">
+       
+                               <div class="card" style="text-align: center;">
+       
+                                   <img class="card-img-top" src='{% static "images/coffemachinepricing.jpg" %}' style="object-fit:contain;">
+       
+                                   <div class="card-body" style="text-align:center;">
+                                   <h3 class="card-title">Complimentary coffee & tea</h3>
+                                   <p class="small-caps"></p>
+                                   <p class="card-text">Our hospitality team ensures there is always plenty of freshly brewed  coffee and tea ready for you and your guests. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                                   </div>
+       
+                               </div>
+       
+                           </div>
+
+                    </div>
+           </div>
+
+           <div class="container-fluid">
+
+                       <div class="row justify-content-center">
+
+                           <div class="col-sm-4 wow animated fadeInUp" data-wow-duration="3s" style="text-align:center;">
+       
+                               <div class="card" style="text-align: center;">
+       
+                                   <img class="card-img-top" src='{% static "images/laptop.jpg" %}'>
+       
+                                   <div class="card-body" style="text-align:center;">
+                                       <h3 class="card-title">High speed wifi & endless power outlets</h3>
+                                   <p class="small-caps"></p>
+                                   <p class="card-text">Walk in, check in, and get right to work. Really fast wifi and tons of power outlets make it easy to connect and recharge throughout your day.</p>
+                                   </div>
+       
+                               </div>
+       
+                           </div>
+                           
+                           <div class="col-sm-4 wow animated fadeInUp" data-wow-duration="3s" style="text-align:center;">
+       
+                                   <div class="card" style="text-align: center;">
+           
+                                       <img class="card-img-top" src='{% static "images/team.jpg" %}'>
+           
+                                       <div class="card-body" style="text-align:center;">
+                                       <h3 class="card-title">Space to host guests and small meetings</h3>
+                                       <p class="small-caps"></p>
+                                       <p class="card-text">Work on a project, host a meeting, or meet a client at any of our locations. Our flexible guest policy makes it easy to always have a place to work & meet.</p>
+                                       </div>
+           
+                                   </div>
+           
+                               </div>
+
+                   </div>
+
+            </div>
+
+<hr>
+
+   <div class="container-fluid wow animated fadeInUp" style="text-align:center; padding-top:110px; padding-bottom:60px;">
+
+       <h1>You might be wondering...</h1>
+
+   </div>
+
+   <div class="container-fluid" style="padding-bottom: 60px;">
+
+       <div class="row" style="text-align:center;">
+
+           <div class="col wow animated fadeInUp">
+               <p style="font-weight:bold; font-size:20px;">How does the $5 Trial Day work?</p>
+           </div>
+
+           <div class="col wow animated fadeInUp">
+               <p class="text-muted" style="text-align:left;">Just show up at any of our spaces to start your $5 Trial Day. It’s really that easy. <br>
+                       <br>
+                       Or you can sign up ahead of time on the website so we recognize you when you arrive, but either way, you don’t need to make a reservation for a specific time or place. Just check in with the host when you arrive. After you check in, you'll be sent instructions to complete your $5 Trial Day purchase.
+                       <br>
+                       <br>
+                       If you plan to invite guests to meet you during your trial day, we ask that they also purchase a $5 Trial Day. Hosting guests is a perk for members. If you absolutely need to host a meeting on your first visit, we recommend jumping directly into one of our Membership plans (Monthly, Quarterly or Annual).</p>
+
+           </div>
+
+       </div>
+
+       <hr>
+
+       <div class="row" style="text-align:center;">
+
+               <div class="col wow animated fadeInUp">
+                   <p style="font-weight:bold; font-size:20px;">How fast is the WiFi?</p>
+               </div>
+   
+               <div class="col wow animated fadeInUp">
+
+                   <p class="text-muted" style="text-align:left;">Insanely fast. We consider fast internet as important as breathing. We’re not talking about coffee shop WiFi here -- we install top-of-the-line high throughput wireless access points and work with local ISPs to deliver uncompromising speed. 
+   
+               </div>
+
+           </div>
+
+       <hr>
+
+       <div class="row" style="text-align:center;">
+
+               <div class="col wow animated fadeInUp">
+                   <p style="font-weight:bold; font-size:20px;">How is Side Spacer different than working in a coffee shop?</p>
+               </div>
+   
+               <div class="col wow animated fadeInUp">
+                   <p class="text-muted" style="text-align:left;">As soon as you walk into Side Spacer, you’ll notice a world of difference compared to a coffee shop.<br><br>
+
+                           A Proper Reception
+                           First and foremost, there’s no line, just a friendly host to welcome you, and any guests you invite for meetings. Never deal with awkward first time meetings in a crowded line for coffee.
+                           <br><br>
+                           Plenty of Seats & Outlets
+                           Once you enter, you’ll have plenty of space to post up for the day in front of your computer, or to host back to back meetings, one after the other. Look down almost anywhere, and you’ll find an outlet that we place under each row of tables.
+                           <br><br>
+                           Super Fast WiFi
+                           We’ll text you a link to access the Spacious WiFi network, which is fast enough for video conference calls. We wouldn’t recommend trying a video conference in the average coffee shop.
+                           <br><br>
+                           Unlimited Self Serve Coffee & Tea
+                           At a coffee shop, there’s always an obligation to repeatedly consume something, just to keep your seat. Not so at Spacious. We offer a hands off, VIP experience, where you can get what you need when you need it, but otherwise we let you come and go as you please all day long, without any obligation.
+                       
+               </div>
+   
+           </div>
+
+       <hr>
+
+       <div class="row" style="text-align:center;">
+
+               <div class="col wow animated fadeInUp">
+                   <p style="font-weight:bold; font-size:20px;">Do you have staff at your locations?</p>
+               </div>
+   
+               <div class="col wow animated fadeInUp">
+                   <p class="text-muted" style="text-align:left;">Yes. Each location will have a couple of friendly hosts to greet you and your guests. Think of them as a hybrid of a hotel concierge and an office manager. Ask them anything. If they don't have the answer they can find someone who does.
+                       
+               </div>
+   
+           </div>
+
+       <hr>
+
+       <div class="row" style="text-align:center;">
+
+               <div class="col wow animated fadeInUp">
+                   <p style="font-weight:bold; font-size:20px;">Can I bring guests? Is there a limit?</p>
+               </div>
+   
+               <div class="col wow animated fadeInUp">
+                   <p class="text-muted" style="text-align:left;">
+                           Monthly members and day pass holders can have unlimited guests. The first hour for each guest is free. After that it’s $6/hr with a daily cap of $24 per guest. If you are expecting a guest, please let the host at the front desk know, so they can welcome them and notify you upon arrival.
+                           <br><br>
+                           (Please notify the host stand when your guests are leaving the space, to ensure you are charged the correct amount for their visit.)
+                       
+               </div>
+   
+           </div>
+   </div>
+
+
+{% endblock %}

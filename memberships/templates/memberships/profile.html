@@ -1,0 +1,31 @@
+{% extends 'Spaces/base.html' %}
+
+{% block content %}
+
+<div class="container-fluid text-center padding">
+<h1 style="padding-top:30px;">My Account</h1>
+</div>
+    {% if user_subscription != None %}
+        <div class="container text-center" style="padding-bottom:140px;">
+        <h4>Current Membership: <strong>{{ user_membership.membership.membership_type }}</strong><br><p>(<small>Last paid on date: {{ user_subscription.get_created_date }}</small>)</p></h4>
+
+        {% if user_subscription.active != False %}
+        <img src="/static/images/happy_poro.png" class="img-fluid"/>
+            <h4 style="padding-top:20px;">Next payment due: {{ user_subscription.get_next_billing_date }}</h4>
+            <a href="{% url 'memberships:cancel' %}" style="margin-top:15px; margin-bottom:20px;" class="btn btn-md btn-success">Cancel Subscription</a>
+        {% else %}
+        <img src="/static/images/poro-sad.png" class="img-fluid"/>
+        <p class="lead">You don't have an active membership plan. Check them out here <a href="{% url 'memberships:select' %}">Billings</a></p>
+        {% endif %}
+        </div>
+    {% else %}
+    <div class="container text-center" style="padding-bottom:140px;">
+    
+        <img src="/static/images/poro-sad.png" class="img-fluid"/>
+    
+        <h2>You don't have an active membership plan.<br><br>Check them out here <a href="{% url 'memberships:select' %}">Billings</a></h1>
+    </div>
+    {% endif %}
+
+
+{% endblock content %}
