@@ -20,7 +20,7 @@ except:print("Error: make a local version of private_settings.py from the templa
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #if DEBUG:
@@ -71,6 +71,7 @@ MIDDLEWARE = [
     'django.middleware.gzip.GZipMiddleware',
     'htmlmin.middleware.HtmlMinifyMiddleware',
     'htmlmin.middleware.MarkRequestMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     #else
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -88,6 +89,7 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
 STATIC_ROOT = os.path.join(BASE_DIR,'static_root')
 STATICFILES_DIRS = [STATIC_DIR, ]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 MEDIA_ROOT = MEDIA_DIR
