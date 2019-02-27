@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, p {
 .jumbotron {
   padding: 1rem;
   border-radius: 0;
+  background-image: url(../images/backgroundimage1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .padding {
@@ -107,9 +111,18 @@ h1, h2, h3, h4, h5, p {
 
 /* Footer changes */
 
-#logotipic {
+.footer{
   text-align: center;
   background-color: #ebebeb;
+}
+
+.col-md-4 p {
+  color: #303030;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logotip img {
@@ -157,6 +170,10 @@ a {
   text-decoration: none;
 }
 
+.clear {
+  color:black;
+}
+
 
 /*--- HOW IT WORKS ---*/
 
@@ -169,10 +186,7 @@ a {
 }
 
 
-
-
-
-
+/*--- Spaces Page  TEMPORARY ---*/
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
