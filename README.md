@@ -4,3 +4,5 @@ This is a website I built, with additional help from a mate, to make an AirBnB-t
 It uses Python with Django as it's backend framework and was hosted on heroku.
 
 Stopped developing it as it required a lot of time to run the venues.
+
+I'll include a compilation of everything that went into it below.
